@@ -1,0 +1,85 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #addressBook {
+    width: 40%;
+    height: 90%;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "a b"
+      "c d";
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #addressBook > li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .buttons {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  
+  #addressBook > li:nth-of-type(1) {
+    background-color: beige;
+    grid-area: a;
+  }
+  #addressBook > li:nth-of-type(2) {
+    background-color: beige;
+    grid-area: b;
+  }
+  #addressBook > li:nth-of-type(3) {
+    background-color: beige;
+    grid-area: c;
+  }
+  #addressBook > li:nth-of-type(4) {
+    background-color: beige;
+    grid-area: d;
+  }
+  
+  #buttonContainer > button {
+    width: 45%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: bisque;
+    border-radius: 5px;
+  }
+  
+  #buttonContainer {
+    height: 5%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1%;
+  }
+  
+  li > article {
+    display: none;
+  }
+  
